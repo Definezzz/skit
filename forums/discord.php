@@ -35,8 +35,6 @@ if ($pun_user['g_read_board'] == '0')
 	
       header('Location: ' . $authUrl); 
 	   }
-
-//var_dump($discord->guild->getGuildRoles(['guild.id' => 452880601867878410, 'name' => "Premium user"]));
   } elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
 
       unset($_SESSION['oauth2state']);
