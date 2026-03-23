@@ -35,7 +35,6 @@ if ($pun_user['g_read_board'] == '0')
 	
       header('Location: ' . $authUrl); 
 	   }
-//$discord = new DiscordClient(['token' => 'NDUyOTA5NDk2MDI1NzQzMzYw.DfXsgg.9y4IcVGEDcZ4JPZLuttAHRhD-mU']); // Token is required
 
 //var_dump($discord->guild->getGuildRoles(['guild.id' => 452880601867878410, 'name' => "Premium user"]));
   } elseif (empty($_GET['state']) || ($_GET['state'] !== $_SESSION['oauth2state'])) {
